@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    background-color: #f4f4f4;
+    padding: 50px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+  }
+  .translator-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-select {
+    margin-bottom: 20px;
+  }
+  .translate-btn {
+    margin-top: 20px;
+    background-color: #4285F4;
+    color: white;
+  }
+  .translate-btn:hover {
+    background-color: #357ae8;
+  }
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+
+}

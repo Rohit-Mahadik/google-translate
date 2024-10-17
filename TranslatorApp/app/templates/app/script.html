@@ -1,0 +1,26 @@
+<script>
+
+    $(".translate-btn").click(function(){
+        console.log("click")
+        let from_lang=$("#fromLanguage").val()
+        let to_lang=$("#toLanguage").val()
+        let content=$("#inputText").val()
+        let csrf=$("input[name=csrfmiddlewaretoken]").val()
+        $.ajax({
+            
+            type: "POST",
+            url: "{% url "translate" %}",
+            data: {fm_lang:from_lang, toLang:to_lang, con:content, csrfmiddlewaretoken:csrf},
+            success:function(data){
+                let x=data.content;
+                console.log(x)
+                if(data.success==200){
+                    $("#outputText").val(x.text);
+                }
+            }
+
+        })
+    })
+
+
+</script>
